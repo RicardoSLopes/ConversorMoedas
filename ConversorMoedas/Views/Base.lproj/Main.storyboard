@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +27,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giY-Oh-wgE">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giY-Oh-wgE">
                                 <rect key="frame" x="16" y="324" width="382" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qLI-Sc-7Wb"/>
@@ -46,13 +48,14 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Valor" textAlignment="center" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="uCr-nn-fDh">
                                 <rect key="frame" x="80" y="394" width="254" height="34"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="254" id="Rxh-uy-aOM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efq-n7-DOb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efq-n7-DOb">
                                 <rect key="frame" x="80" y="459.5" width="254" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
@@ -63,7 +66,7 @@
                                     <action selector="didTapToConvert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uIw-NT-gH3"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScX-0e-tZN">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScX-0e-tZN">
                                 <rect key="frame" x="16" y="244" width="382" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4k1-WA-jSk"/>
@@ -96,6 +99,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0088544823230000003" green="0.5153288841" blue="0.37253153319999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="giY-Oh-wgE" firstAttribute="top" secondItem="DfI-VD-giZ" secondAttribute="bottom" constant="8" id="AdJ-9a-IXm"/>
@@ -121,7 +125,6 @@
                             <constraint firstItem="HI4-P8-epd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ycK-zR-dvx"/>
                             <constraint firstItem="6Fl-hH-MkI" firstAttribute="top" secondItem="HI4-P8-epd" secondAttribute="bottom" constant="22" id="zzP-YT-zXr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="dollarsign.circle" catalog="system" id="FLk-SW-U7d"/>
                     <connections>
@@ -193,13 +196,13 @@
                                                 </label>
                                                 <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-3a-mgW">
                                                     <rect key="frame" x="0.0" y="38" width="344" height="1"/>
-                                                    <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="backgroundColor" systemColor="labelColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="94f-U8-gck"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="tintColor" systemColor="darkTextColor"/>
                                             <constraints>
                                                 <constraint firstItem="kHG-qs-jbk" firstAttribute="leading" secondItem="fgI-c3-LDh" secondAttribute="leading" constant="16" id="4wQ-Yg-7DT"/>
                                                 <constraint firstAttribute="trailing" secondItem="gpa-3a-mgW" secondAttribute="trailing" id="5qS-kK-QM9"/>
@@ -210,7 +213,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="kHG-qs-jbk" secondAttribute="bottom" constant="10" id="g6F-db-Rv1"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="tintColor" systemColor="darkTextColor"/>
                                         <size key="customSize" width="344" height="39"/>
                                         <connections>
                                             <outlet property="label" destination="kHG-qs-jbk" id="0BG-Gy-dET"/>
@@ -231,6 +234,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="7ES-9D-thW"/>
                         <color key="backgroundColor" red="0.0082999784500000003" green="0.52732354400000003" blue="0.36076229809999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2GR-Po-dJI" firstAttribute="top" secondItem="RuO-aP-HKx" secondAttribute="bottom" constant="20" id="27a-Se-DZb"/>
@@ -250,7 +254,6 @@
                             <constraint firstItem="VFi-GN-TSe" firstAttribute="trailing" secondItem="7ES-9D-thW" secondAttribute="trailing" id="xsi-MU-0Ji"/>
                             <constraint firstItem="azJ-aJ-dLc" firstAttribute="centerY" secondItem="RuO-aP-HKx" secondAttribute="centerY" id="xwk-Yz-YtV"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7ES-9D-thW"/>
                     </view>
                     <navigationItem key="navigationItem" id="Toe-xO-6Mg"/>
                     <connections>
@@ -271,5 +274,17 @@
         <image name="arrows" width="512" height="512"/>
         <image name="cambio" width="512" height="512"/>
         <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

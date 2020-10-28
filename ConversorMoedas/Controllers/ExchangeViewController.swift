@@ -96,4 +96,8 @@ class ExchangeViewController: UIViewController{
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "list")
         present(vc, animated: true, completion: nil)
     }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+            view.endEditing(true)
+    }
 }
